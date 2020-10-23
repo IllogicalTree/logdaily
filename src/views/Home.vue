@@ -159,7 +159,7 @@ ${tasks}`
       return `Daily log - ${days[date.getDay()-1]} ${date.getDate()}${getSuffix(date.getDate().toString())} ${months[date.getMonth()]} ${date.getFullYear()}`
     },
     downloadMarkdown: function() {
-      this.updateMarkdown()
+      //this.updateMarkdown()
       let blob = new Blob([this.markdown], {type: 'text/plain'})
       let a = document.createElement('a');
       a.href =  window.URL.createObjectURL(blob)
